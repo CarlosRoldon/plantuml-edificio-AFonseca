@@ -1,0 +1,8 @@
+@startuml
+usecase "Crear Personaje" as UC1
+usecase "Validar nombre disponible" as V
+usecase "Reclamar bono de bienvenida" as B
+
+UC1 .> V : <<include>>
+B .> UC1 : <<extend>>
+@enduml
