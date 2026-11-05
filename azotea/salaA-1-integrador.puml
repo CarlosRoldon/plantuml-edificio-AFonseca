@@ -1,0 +1,15 @@
+@startuml
+actor "Jugador casual" as Jugador
+participant MotorCombate
+participant Mago
+participant Monstruo
+
+Jugador -> MotorCombate : iniciarCombate(mago, monstruo)
+loop ronda de combate
+  MotorCombate -> Mago : lanzarHechizo(monstruo)
+  Mago --> MotorCombate : danoMagico = 45
+  MotorCombate -> Monstruo : contraatacar(mago)
+  Monstruo --> MotorCombate : danoFisico = 20
+end
+MotorCombate --> Jugador : combateFinalizado(victoria)
+@enduml
