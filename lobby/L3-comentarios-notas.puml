@@ -1,0 +1,7 @@
+@startuml
+' Este es un requerimiento no funcional
+class Jugador
+note right of Jugador
+  Las contraseñas deben estar encriptadas
+end note
+@enduml
