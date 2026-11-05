@@ -1,0 +1,10 @@
+@startuml
+abstract class Personaje
+class Mago
+class Estadisticas
+class Habilidad
+
+Personaje <|-- Mago
+Personaje *-- Estadisticas
+Personaje o-- Habilidad
+@enduml
