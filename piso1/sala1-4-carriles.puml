@@ -1,0 +1,11 @@
+@startuml
+|Jugador casual|
+start
+:Ingresar nombre y seleccionar clase;
+|Sistema|
+:Validar disponibilidad de nombre;
+:Asignar estadísticas base;
+|Jugador casual|
+:Confirmar creación y ver resumen;
+stop
+@enduml
