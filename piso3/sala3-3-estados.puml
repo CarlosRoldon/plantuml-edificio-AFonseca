@@ -1,0 +1,8 @@
+@startuml
+[*] --> EnCreacion
+EnCreacion --> Explorando : confirmarPersonaje
+Explorando --> EnCombate : iniciarCombate
+EnCombate --> Explorando : huir / victoria
+EnCombate --> Caido : vida == 0
+Caido --> [*]
+@enduml
