@@ -1,0 +1,3 @@
+@startuml
+JugadorCasual -> Sistema : crearPersonaje()
+@enduml
