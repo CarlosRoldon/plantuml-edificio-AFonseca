@@ -1,0 +1,9 @@
+@startuml
+node "Dispositivo del Jugador" {
+  artifact "rpg-manager.jar" as Cliente
+}
+node "Servidor Central RPG" {
+  database "Base de Datos de Cuentas" as DB
+}
+Cliente --> DB : Conexion Segura (Persistencia)
+@enduml
