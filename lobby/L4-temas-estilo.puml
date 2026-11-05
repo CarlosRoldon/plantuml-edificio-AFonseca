@@ -1,0 +1,8 @@
+@startuml
+!theme plain
+skinparam classAttributeIconSize 0
+class Mago {
+  - magia : int
+  - vida : int
+}
+@enduml
