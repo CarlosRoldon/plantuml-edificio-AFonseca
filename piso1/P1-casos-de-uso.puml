@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+actor "Jugador casual" as J
+rectangle "RPG Manager" {
+  usecase "Gestionar inventario" as UC3
+  usecase "Guardar progreso" as UC4
+}
+J --> UC3
+J --> UC4
+@enduml
