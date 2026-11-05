@@ -1,0 +1,10 @@
+@startuml
+component "Interfaz Consola" as UI
+component "Controlador Combate" as CC
+component "Gestor Persistencia" as GP
+interface "IServicioCombate" as ISC
+
+UI --> ISC
+ISC - CC
+CC --> GP
+@enduml
