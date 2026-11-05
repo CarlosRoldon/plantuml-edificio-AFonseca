@@ -1,0 +1,7 @@
+@startuml
+title Creación de Personaje
+Jugador -> Sistema : ingresarNombre("Arthur")
+Sistema --> Jugador : nombreValido
+Jugador -> Sistema : seleccionarClase("Guerrero")
+Sistema --> Jugador : personajeCreado
+@enduml
