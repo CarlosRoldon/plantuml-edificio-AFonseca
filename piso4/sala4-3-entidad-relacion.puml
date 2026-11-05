@@ -1,0 +1,16 @@
+@startuml
+entity Jugador {
+  * id : INT <<PK>>
+  --
+  username : VARCHAR(50)
+  email : VARCHAR(100)
+}
+entity Personaje {
+  * id : INT <<PK>>
+  --
+  jugador_id : INT <<FK>>
+  nombre : VARCHAR(50)
+  clase : VARCHAR(20)
+}
+Jugador ||--o{ Personaje
+@enduml
