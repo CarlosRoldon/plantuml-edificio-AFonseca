@@ -1,0 +1,9 @@
+@startuml
+class Guerrero {
+  - nombre : String
+  - vida : int
+  - fuerza : int
+  + atacar(objetivo : Personaje) : int
+  + estaVivo() : boolean
+}
+@enduml
