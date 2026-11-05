@@ -1,0 +1,10 @@
+@startuml
+[*] --> Exploracion
+state "EnCombate" as EC {
+  [*] --> TurnoJugador
+  TurnoJugador --> TurnoMonstruo : ejecutarAccion
+  TurnoMonstruo --> TurnoJugador : respuestaEnemigo
+}
+Exploracion --> EC : iniciarCombate
+EC --> Exploracion : finCombate / huir
+@enduml
