@@ -1,0 +1,10 @@
+@startuml
+!include <C4/C4_Container>
+Person(jugador, "Jugador Casual", "Usuario que interactúa con el sistema")
+System_Boundary(rpg, "RPG Manager") {
+  Container(app, "Módulo de Juego", "Java / POO", "Gestiona personajes, inventario y combates")
+  ContainerDb(db, "Base de Datos", "MariaDB", "Almacena cuentas y estado de partidas")
+}
+Rel(jugador, app, "Juega e interactúa con", "Consola / GUI")
+Rel(app, db, "Persiste y consulta datos de partidas", "JDBC")
+@enduml
