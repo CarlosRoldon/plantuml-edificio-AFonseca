@@ -1,0 +1,13 @@
+@startuml
+start
+:Iniciar creación de personaje;
+:Ingresar nombre;
+if (¿Nombre disponible?) then (sí)
+  :Seleccionar clase (Guerrero, Mago, Arquero);
+  :Asignar estadísticas base;
+  :Guardar personaje;
+else (no)
+  :Mostrar error: "Nombre en uso";
+endif
+stop
+@enduml
