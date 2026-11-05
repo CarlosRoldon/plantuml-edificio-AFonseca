@@ -1,0 +1,12 @@
+@startuml
+object "merlin : Mago" as m {
+  nombre = "Merlín"
+  vida = 80
+  magia = 150
+}
+object "pocionVida : Item" as p {
+  nombre = "Poción Menor"
+  cantidad = 3
+}
+m --> p
+@enduml
