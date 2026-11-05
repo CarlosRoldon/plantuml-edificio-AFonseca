@@ -1,0 +1,8 @@
+@startuml
+actor Jugador
+participant MotorCombate
+participant Mago
+Jugador -> MotorCombate : lanzarHechizo()
+MotorCombate -> Mago : calcularDanioMagico()
+Mago --> MotorCombate : dano = 45
+@enduml
