@@ -1,0 +1,11 @@
+@startuml
+loop mientras vidaMonstruo > 0 y vidaJugador > 0
+  MotorCombate -> Jugador : solicitarAccion()
+  alt tienePocion == true
+    Jugador -> Inventario : usarPocionVida()
+    Inventario --> Jugador : vidaRestaurada
+  else sin pociones
+    Jugador -> MotorCombate : ejecutarAtaqueBasico()
+  end
+end
+@enduml
